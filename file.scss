@@ -1,0 +1,7 @@
+$spanNamber: 11;
+
+@for $i from 1 through $spanNamber {
+    span:nth-child(#{$i}) {
+        color: hsl(360 * (($i - 1) / $spanNamber), 100%, 50%);
+    }
+}
